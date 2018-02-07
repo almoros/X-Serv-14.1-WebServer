@@ -15,11 +15,11 @@ import socket
 # let's use one above 1024
 
 mySocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-mySocket.bind(('localhost', 1234))
+mySocket.bind(('localhost', 1231))
 
 # Queue a maximum of 5 TCP connection requests
 
-mySocket.listen(5)
+mySocket.listen(1)
 
 # Accept connections, read incoming data, and answer back an HTML page
 #  (in an infinite loop)
